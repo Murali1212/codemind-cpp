@@ -1,24 +1,24 @@
-#include<stdio.h>
+#include<bits/stdc++.h>
 int main()
 {
     int n,x[20],count=0,i;
-    scanf("%d",&n);
+    std::cin>>n;
     for(i=0;i<n;i++)
-      scanf("%d",&x[i]);
+      std::cin>>x[i];
       
      for(i=0;i<n-2;i++)
      {
         
-           // for(j=i+1;j<n;j++)
-          //  {
+           
+         
         if(x[i]%2==0 && x[i+1]%2!=0 && x[i+2]%2==0)
         {
             count++;
                       
         }
-          //  }
+          
          
      }
-     printf("%d",count);
+     std::cout<<count;
      return 0;
 }
